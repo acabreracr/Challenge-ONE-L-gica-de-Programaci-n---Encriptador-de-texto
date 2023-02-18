@@ -1,0 +1,358 @@
+*{
+    background: #E0D1BF;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    position: absolute;
+    margin: 40px 0px 0px 40px;
+    background: #E0D1BF;
+}
+
+header .logo {
+    display: flex;
+    align-items: flex-start;
+    width: 120px;
+    height: 48px;
+    background: #E0D1BF;
+    color: #3D3A30;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    background-position: center;
+}
+
+.primer-seccion{
+    width: 60%;
+    margin: 168px 0px 0px 140px;
+    background: transparent;
+}
+
+.text-area{
+    width: 660px;
+    height: 288px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    border: none;
+    color: #3D3A30;
+    text-transform: lowercase;
+    resize: none;
+}
+
+::placeholder{
+color: #3D3A30;
+}
+
+.text-area:focus{
+    outline: none;
+}
+
+.advertencia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    top: 500px;
+}
+
+.informacion{
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    opacity: 0.8;
+    color: #9A927B;
+}
+
+/*
+.mensaje{
+    height: 570px;
+    background: white;
+    background-image: url("Imagenes/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 24px;
+    color: #0A3B71;
+    margin-left: 198px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+
+.mensaje:focus{
+    outline: none;
+}
+*/
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    position: absolute;
+    top: 526px;
+    margin-top: 20px;
+}
+
+.btn-encriptar{
+    background-color: #BFA891;
+    border: none;
+    border-radius: 24px;
+    color: #3D3A30;
+    cursor: pointer;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: bold;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+    transition: 0.3s all;
+}
+
+.btn-encriptar:hover{
+    color: #E0D1BF;
+    background: #9A927B;
+}
+
+.btn-desencriptar{
+    background: #BFA891;
+    border: none;
+    border-radius: 24px;
+    color: #3D3A30;
+    cursor: pointer;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: bold;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+    transition: 0.3s all;
+}
+
+.btn-desencriptar:hover {
+    color: #E0D1BF;
+    background: #9A927B;
+}
+
+.segunda-seccion{
+    width: 270px;
+    height: 580px;
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    text-align: center;
+    border-radius: 16px;
+    background: #CBAFA2;
+    box-shadow: 9px 24px 32px -8px rgba(0, 0, 0, 0.2);
+}
+
+.resultado{
+    width: 250px;
+    margin: auto;
+    margin-top: 50%;
+    background: #CBAFA2;
+}
+
+.img-munieco{
+    background: #CBAFA2;
+}
+
+.primer-texto{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    background: #CBAFA2;
+    color: #3D3A30;
+}
+
+.segundo-texto{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    background: #CBAFA2;
+    color: #3D3A30;
+}
+
+.mensaje{
+    width: 100%;
+    height: 485px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #495057;
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border: none;
+    resize: none;
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+.copiar{
+    width: 224px;
+    height: 67px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    padding: 24px;
+    font-size: 20px;
+    font-style: bold;
+    color: #3D3A30;
+    line-height: 19px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 33px;
+    background: #BFA891;
+    transition: 0.3s all;
+}
+
+.copiar:hover {
+    color: #E0D1BF;
+    background: #9A927B;
+}
+
+footer{
+    margin-top: 60px;
+    color: #F3F5FC;
+    text-align: center;
+    height: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #4d5054;
+}
+
+@media (max-width: 1250px) {
+
+    Header.logo {
+        background: #E0D1BF;
+        color: #3D3A30;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .primer-seccion{
+        margin: 168px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .botones{
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+
+    .advertencia{
+        position: inherit;
+        margin: 15px;
+    }
+
+    .segunda-seccion{
+        width: 665px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .resultado{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .img-munieco{
+        display: none;
+    }
+
+    .copiar{
+        position: inherit;
+        width: 100%;
+    }
+
+    .mensaje{
+        width: 100%;
+        height: 210px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 720px) {
+
+    header .logo{
+        width: 100%;
+        padding: 2px;
+        background: #E0D1BF;
+        color: #3D3A30;
+    }
+
+    .text-area{
+        width: 90%;
+        font-size: 24px;
+    }
+
+    .botones{
+        display: grid;
+        gap: 21px;
+    }
+
+    .segunda-seccion{
+        width: 90%;
+    }
+
+    .copyright{
+        font-size: 20px;
+    }
+
+}
